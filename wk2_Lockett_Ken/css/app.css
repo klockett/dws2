@@ -1,0 +1,36 @@
+/* custom css */
+
+body{
+ height: 100%;
+ width: 100%;
+ display: table;
+
+}
+
+#logo{
+ padding: 1%;
+
+}
+
+.footer {
+ color: #ffffff;
+ background-color: #000000;
+
+ display:table-row;
+ height: 1px;
+
+}
+.row12 {
+ padding: 1%;
+}
+.row13 {
+ height: auto;
+text-align: center;
+margin-right: 45px;
+border-radius: 200px 200px 200px 200px
+background-color: red;
+}
+
+.video {
+ padding: 1%;
+}
