@@ -1,0 +1,283 @@
+/*custom css style sheet     */
+
+/* Site Styles
+ =============================================*/
+
+ *{
+ 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+ /* Page Styles
+ =============================================*/
+ body{
+  background-color: black;
+
+ 
+ 
+ }
+ 
+  /* Navigaation
+ =============================================*/
+ nav.primary ul
+ nav.primay ul li {
+  margin:0px;
+ }
+ 
+ nav.primary select {
+  display: none;
+  width:100%;
+  height: auto;
+  margin: 21px 0;
+  padding: 1%
+ }
+ 
+ 
+  nav.primary ul li {
+    display:inline;
+    float: left;
+    position: relative;
+  
+  }
+
+ 
+  
+ nav.primary ul li a {
+ 
+ display: inline-block;
+ line-height: 49px;
+ color: #ebebeb;
+ padding: 0 14px;
+ height: auto;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-weight: bold;
+ letter-spacing: 0.08em;
+ 
+ }
+ 
+   nav.primary ul li a:hover {
+    background: #424242;
+    cursor: pointer;
+
+  
+  }
+ h1{
+  color:#cfb31f;
+  padding: 1% 1% 0;
+  text-align:center;
+ 
+ 
+ }
+.main {
+  position: relative;
+  text-align: center;
+  margin: 3rem auto -12rem auto;
+  
+}
+.main {
+  position: relative;
+  max-width: 60%;
+  text-align: center;
+  margin-top: 3%;
+
+}
+.main + .main{
+  display: none;
+  text-align: center;
+ 
+} 
+
+
+
+
+ .header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+ 
+ }
+ 
+ 
+ .banner {
+ 
+  max-width: 100%;  
+  
+  height: auto;
+   
+ margin: auto;
+ display: block;
+ 
+
+
+ 
+ 
+ }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  
+    position: relative;
+
+ 
+ 
+ }
+
+.footer {
+ width: 100%;  
+ color: #ffffff;
+ background-color: #cfb31f;
+ display:block;
+ height: 50px;
+ position: relative;
+ margin-top: 30%; /* negative value of footer height */
+ clear:both;
+}
+
+.divider{
+ text-align: center;
+
+}
+
+.divider img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  
+    position: relative;
+    
+}
+
+.main {
+ display:inline;
+ clear: both;
+}
+
+img{
+max-width:100%;
+
+}
+
+gal img{
+max-width:100%;
+padding: auto 0;
+}
+
+main img{
+max-width:100%;
+padding: 10% 0;
+}
+
+.about {
+color:#cfb31f;
+
+}
+
+.contact {
+ font-size: 2.5em;
+ 
+}
+
+/* smaller than standard 960 */
+@media only screen and (max-width: 959px) {}
+
+/* tablet portraits size to standard (also point when grid becomes active) */
+@media only screen and (min-width: 760px) amd(max-width: 959px) {}
+
+/* Larger than tablet */
+@media  only screen and(max-width: 767px) {
+       
+ nav.primary select {
+  display: block;
+ }
+
+  
+ nav.primary ul {
+  display: none;
+ }
+ 
+
+
+}
+
+/* Larger than desktop */
+@media (min-width: 480px) and (max-width: 767px) {}
+
+/* Larger than Desktop HD */
+@media (max-width: 479px) {}
+ /*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;

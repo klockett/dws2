@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>xmma</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  ––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/X_Spartan 101fav1.png">
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="Band header">
+  <div class="row">
+   <header div class="container">
+      <div class="sixteen columns">
+ 
+      <img src="images/X2logo.png" />
+  
+   
+ 
+
+    
+
+  </div>
+   </header>
+    </div> 
+ <div class="navigation">
+   <nav class="container primary">
+     <div class="sixteen columns">
+       
+        <ul> 
+          
+          
+          <li class="active"><a href="index.html">Home</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="gallery.html">Gallery</a><li> 
+          <li><a href="contact.html">Contact</a><li>
+    
+     </ul>
+      </div>
+    </div>
+  </nav>
+ </div>
+
+    
+    <div class="banner">
+  <div class="row">
+   <div class="container banner">
+
+    
+      <div class="eleven columns">
+       <img src="images/logobanner-1.png" alt="Make Image responsive"/>      
+ </div>
+  </div>
+   </div>
+    </div> 
+    <h1>ABOUT</h1>
+      <div class="divider">
+  <div class="row">
+   <div class="container divider">
+
+    
+      <div class="eleven columns">
+<img src="images/Divider.png" alt="Make Image responsive"/> </div>
+  </div>
+   </div>
+    </div> 
+    
+ 
+<div class="container about">
+	<div class="row">
+		<div class="Eight columns about">
+	<p>Professor Xandao has been practicing Jiu Jitsu for over 14 years. He’s been a black belt since 2009 under the living legend and leader of Checkmat BJJ team: Leonardo Vieira. Professor Assis received his first degree on his black belt in 2013.</p>
+
+<p>Professor Xando is a dedicated and active Brazilian Jiu Jitsu competitor. He is also one of the leading professors of the sport. Among his students are serious BJJ competitors, MMA Fighters, law enforcement officers, military personnel, children, hobbyists, fitness and self-defense enthusiasts. His accomplishments in BJJ are matched by only a few in the history of the sport. He consistently makes it to the podium at the black belt level whenever he competes. He’s medaled at the Jiu Jitsu Worlds Championship, ADCC, Jiu Jitsu NoGi Worlds Championship, Pan-American Championship, American Nationals Championship and Grapplers Quest.</p>
+
+<p>Noted by his opponents, training partners and students as a complete fighter, professor Assis is acclaimed to be one of the best Jiu Jitsu artists of his generation. He has some of the best takedowns, sweeps, guard passes, submissions and back attack games in the business. Restless, he’s always practicing to achieve excellence. Not just for himself but also for his students.</p>
+
+<p>At professor Xando’ academy, XMMA Jiu Jitsu, students receive the latest techniques and are taught with the greatest attention to detail during all the training sessions, whether it be kids class or black belt training.</p>
+
+<p>Professor  Xando inspires and instills passion in his students, not only in Jiu Jitsu but also in life. He has introduced hundreds of people to the Jiu Jitsu lifestyle. It is a positive way to live, eat and face life. It teaches a serious and solid work ethic that goes far beyond the mats and helps people improve their lives and overall well-being. Students will see a transformation in their personal and professional lives through professor  Xando and his teachings at XMMA Jiu Jitsu. </p>	     
+	</div>
+	
+	
+	</div>	
+</div>
+
+
+ <div class="footer">
+  <div class="row">
+   <footer class="container footer">
+
+    
+      <div class="sixteen columns" >
+       <p>©2015 | All Rights Reserved | Designed By:Ken Lockett</p>     
+ </div>
+  </div>
+   </footer>
+    </div> 
+
+  <!--JS
+======================================================== -->
+ <script src="http://code.jquery.com/jquery-1.7.1min.js"></script>
+ <script src="javascripts/tabs.js"></script>
+ 
+ <script src="http://code.jquery.flickrush.js"></script>
+ <script src="http://code.jquery.flexslider.js"></script>
+ 
+ <script type="text/javascript">
+  $(document).ready(function() {
+  
+     //build dropdown
+    $("<select />").appendTo(".navigation nav div"); 
+    
+     $("<option />", {
+       "selected": "selected",
+       "value"   : "",
+       "text"    : "Go to..."
+       }).appendTo("nav select");
+   
+    $(".navigation nav li a").each(function() {
+     var el = $(this);
+      $("<option />", {
+       "value"   : el.attr("href"),
+       "text"    : el.text()
+       }).appendTo("nav select");
+    });
+    
+
+   $("nav select").change(function() {
+       window.location = $(this).find("option:selected").val();
+ 
+ });
+});
+  
+  </script>   
+
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

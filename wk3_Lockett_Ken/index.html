@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>xmma</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  ––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/X_Spartan 101fav1.png">
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="Band header">
+  <div class="row">
+   <header div class="container">
+      <div class="sixteen columns">
+ 
+      <img src="images/X2logo.png" />
+  
+   
+ 
+
+    
+
+  </div>
+   </header>
+    </div> 
+ <div class="navigation">
+   <nav class="container primary">
+     <div class="sixteen columns">
+       
+        <ul> 
+          
+          <li class="active"><a href="index.html">Home</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="gallery.html">Gallery</a><li> 
+          <li><a href="contact.html">Contact</a><li>
+    
+     </ul>
+      </div>
+    </div>
+  </nav>
+ </div>
+
+    
+    <div class="banner">
+  <div class="row">
+   <div class="container banner">
+
+    
+      <div class="eleven columns">
+       <img src="images/BG.png" alt="Make Image responsive"/>      
+ </div>
+  </div>
+   </div>
+    </div> 
+   
+      <div class="divider">
+  <div class="row">
+   <div class="container divider">
+
+    
+      <div class="eleven columns">
+<img src="images/Divider.png" alt="Make Image responsive"/> </div>
+  </div>
+   </div>
+    </div> 
+    <h1>Partners</h1> 
+  <div class="main">
+  
+  <div class="row">
+   <div class="container main">
+<div class="one-half column">
+         <img class="logo" src="images/emvolve.jpg">
+        </div>
+        <div class="one-third column logo">
+          <img class="logo" src="images/logo.png">
+    
+ </div>
+  </div>
+   </div>
+    </div> 
+
+
+ <div class="footer">
+  <div class="row">
+   <footer class="container footer">
+
+    
+      <div class="sixteen columns" >
+       <p>©2015 | All Rights Reserved | Designed By:Ken Lockett</p>     
+ </div>
+  </div>
+   </footer>
+    </div> 
+
+  <!--JS
+======================================================== -->
+ <script src="http://code.jquery.com/jquery-1.7.1min.js"></script>
+ <script src="javascripts/tabs.js"></script>
+ 
+ <script src="http://code.jquery.flickrush.js"></script>
+ <script src="http://code.jquery.flexslider.js"></script>
+ 
+ <script type="text/javascript">
+  $(document).ready(function() {
+  
+     //build dropdown
+    $("<select />").appendTo(".navigation nav div"); 
+    
+     $("<option />", {
+       "selected": "selected",
+       "value"   : "",
+       "text"    : "Go to..."
+       }).appendTo("nav select");
+   
+    $(".navigation nav li a").each(function() {
+     var el = $(this);
+      $("<option />", {
+       "value"   : el.attr("href"),
+       "text"    : el.text()
+       }).appendTo("nav select");
+    });
+    
+
+ 
+   $("nav select").change(function() {
+       window.location = $(this).find("option:selected").val();
+  });
+ 
+});
+ 
+ 
+  </script>   
+
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
