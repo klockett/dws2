@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RARE TOY's</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+ 
+  </script>   
+  </head>
+  
+   <!-- Body start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <body>
+   
+   <!-- Header start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+    <header>
+     
+     <div class="logo">
+ 
+     <img src="images/rblogo.png" alt="Make Image responsive"/>
+   
+   
+      <!-- Navigation start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+</div>
+   </header>
+    </div> 
+ <div class="navigation">
+   <nav class="container primary">
+       
+       
+     
+       
+        <ul> 
+          
+          <li class="active"><a href="index.html">Home</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="gallery.html">Gallery</a><li> 
+          <li><a href="contact.html">Contact</a><li>
+    
+       </ul>
+    </nav>
+  <nav id="nav-mobile"></nav>   
+    
+      <!-- Navigation End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+   <div class="banner">
+     <img src="images/toybanner.jpg" alt="Make Image responsive"/> 
+      </div>
+     <!-- Header End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </header>
+   
+        <!-- Navigation Start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+  
+      <!-- VIDEO START
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  
+
+		<!-- Form -->
+		<form id="contact-form" action="/" method="post">
+		<form action="mailto:knlockett@yahoo.com" method="post" enctype="text/plain">
+			<h3>Contact Us</h3>
+			<h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
+			<div>
+				<label>
+					<span>Name: (required)</span>
+					<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email: (required)</span>
+					<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Telephone: (required)</span>
+					<input placeholder="Please enter your number" type="tel" tabindex="3" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Website: (required)</span>
+					<input placeholder="Begin with http://" type="url" tabindex="4" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Message: (required)</span>
+					<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Send Email</button>
+			</div>
+		</form>
+		<!-- /Form -->
+		
+		</div>
+	</div>
+
+  <script src="js/scripts.js"></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Footer Start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+ <footer>
+   <div class="footer">
+ <footer class="container footer">
+
+    
+      
+       <p>©2015 | All Rights Reserved | Designed By:Ken Lockett</p>     
+
+  </div>
+
+ 
+  <!-- Footer End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ </footer> 
+  
+  
+  <!-- Body End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+   <script src="http://code.jquery.com/jquery-1.9.1min.js"></script>
+ <script src="javascripts/tabs.js"></script>
+   
+    <script src="http://code.jquery.flickrush.js"></script>
+ <script src="http://code.jquery.flexslider.js"></script>
+ 
+ <script type="text/javascript">
+  $(document).ready(function() {
+  
+     //build dropdown
+    $("<select />").appendTo(".navigation nav div"); 
+    
+     $("<option />", {
+       "selected": "selected",
+       "value"   : "",
+       "text"    : "Go to..."
+       }).appendTo("nav select");
+   
+    $(".navigation nav li a").each(function() {
+     var el = $(this);
+      $("<option />", {
+       "value"   : el.attr("href"),
+       "text"    : el.text()
+       }).appendTo("nav select");
+    });
+    
+
+ 
+   $("nav select").change(function() {
+       window.location = $(this).find("option:selected").val();
+  });
+ 
+});
+ 
+ 
+  </script>   
+
+
+
+
+ </body>
+  
+</html>
+  

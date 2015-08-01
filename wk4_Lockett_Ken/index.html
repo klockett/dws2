@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RARE TOY's</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script src="jquery.flexslider.js"></script>
+
+   <script type="text/javascript" charset="utf-8">
+   $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+
+ 
+  </script>   
+  </head>
+  
+   <!-- Body start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <body>
+   
+   <!-- Header start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+    <header>
+     
+     <div class="logo">
+ 
+     <img src="images/rblogo.png" alt="Make Image responsive"/>
+   
+   </div>
+   </header>
+   
+      <!-- Navigation start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+   
+ <div class="navigation">
+   <nav class="container primary">
+       
+       <ul> 
+          
+          <li class="active"><a href="index.html">Home</a><li>
+          <li><a href="about.html">About</a><li>
+          <li><a href="gallery.html">Gallery</a><li> 
+          <li><a href="contact.html">Contact</a><li>
+    
+       </ul>
+    </nav>
+   </div>
+      <!-- Navigation End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+   <div class="banner">
+     <img src="images/toybanner.jpg" alt="Make Image responsive"/> 
+      </div>
+     <!-- Header End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </header>
+   
+        <!-- Navigation Start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+  
+      <!-- VIDEO START
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="videoWrapper">
+    <!-- Copy & Pasted from YouTube -->
+    <iframe width="460" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+</div>
+ 
+      <!-- VIDEO End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <div>
+  <div class="train">
+   <a href="contact.html">
+   <img src="images/train.jpg" alt="Make Image responsive"/></a>
+     <p><strong>Contact</stron> </p>
+  </div>  
+  
+
+  <div class="joystick"> 
+  <a href="gallery.html">
+  <img src="images/joystick.jpg" alt="Make Image responsive"/></a>
+    <p><strong>Gallery</stron> </p>
+  </div> 
+  </div> 
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Footer Start
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+ <footer>
+   <div class="footer">
+ <footer class="container footer">
+
+    
+      
+       <p>©2015 | All Rights Reserved | Designed By:Ken Lockett</p>     
+
+  </div>
+
+ 
+  <!-- Footer End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ </footer> 
+  
+  
+  <!-- Body End
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+   <script src="http://code.jquery.com/jquery-1.7.1min.js"></script>
+ <script src="javascripts/tabs.js"></script>
+   
+    <script src="http://code.jquery.flickrush.js"></script>
+ <script src="http://code.jquery.flexslider.js"></script>
+ 
+ <script type="text/javascript">
+  $(document).ready(function() {
+  
+     //build dropdown
+    $("<select />").appendTo(".navigation nav div"); 
+    
+     $("<option />", {
+       "selected": "selected",
+       "value"   : "",
+       "text"    : "Go to..."
+       }).appendTo("nav select");
+   
+    $(".navigation nav li a").each(function() {
+     var el = $(this);
+      $("<option />", {
+       "value"   : el.attr("href"),
+       "text"    : el.text()
+       }).appendTo("nav select");
+    });
+    
+
+ 
+   $("nav select").change(function() {
+       window.location = $(this).find("option:selected").val();
+  });
+ 
+});
+ 
+ 
+  </script>   
+
+
+
+
+ </body>
+  
+</html>

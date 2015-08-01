@@ -1,0 +1,524 @@
+
+/* body start*/
+*{
+ 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box;
+}
+
+html, body {
+	background: #1074f2;
+	margin: auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: 1074f2;
+}
+
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 0;
+	background: white;
+	line-height: 1.8;
+	font-weight: normal;
+    font-size: 100%;
+	height: auto; 
+   
+}
+
+
+/* body end*/
+ 
+
+ }
+/* header start*/
+ 
+ .logo img {
+   float: left;
+   max-width: 100%;
+   height:auto;
+ 
+ }
+
+.banner {
+   text-align:center;
+   max-width: 100%;
+   height: auto;
+   margin: auto;
+   display: block;
+ 
+
+  
+  
+  }
+  
+
+  
+  .banner img {
+   max-width: 100%;
+  
+  
+  }
+/* header end*/
+
+
+
+
+/* navigation start*/
+
+
+ nav.primary ul
+ nav.primay ul li {
+  margin:0px;
+ }
+ 
+ nav.primary select {
+  display: none;
+  width:100%;
+  height: auto;
+  margin: 21px 0;
+  padding: 1%
+ }
+ 
+ 
+  nav.primary ul li {
+    display:inline;
+    float: left;
+    position: relative;
+  
+  }
+
+nav.primary ul li a{
+ 
+ display: inline-block;
+ line-height: 49px;
+ color: #1074f2;
+ padding: 0 14px;
+ height: auto;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-weight: bold;
+ letter-spacing: 0.08em;
+ 
+
+}
+
+
+  nav.primary ul  {
+    display:inline;
+    float: left;
+    position: center;
+  
+  }
+
+
+
+
+nav.primary li {
+ display: inline-block;
+ text-transform: uppercase;
+ margin-right: 40px;
+ text-align: center;
+}
+
+
+ nav.primary ul li a:hover {
+    background: #424242;
+    cursor: pointer;
+
+  
+  }
+   nav.primary ul li a:hover {
+    background: #424242;
+    cursor: pointer;
+
+  
+  }
+
+/* navigation end*/
+
+
+
+/* Floating images Start*/
+
+ .joystick {
+   float:left;
+   padding: 40px;
+   text-align:center;
+ 
+ }
+ 
+ .train {
+   float:right;
+   padding: 40px;
+   text-align:center;
+}
+
+ /* Floating images End*/
+
+
+ /* Video Start*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+ /* Video End*/
+
+
+ 
+
+/* footer start*/
+
+footer {
+ width: 100%;  
+ color: #ffffff;
+ background-color: #ed232b;
+ display:block;
+ height: auto;
+ border-top: 1px 
+ position: relative;
+ text-align: center;
+ margin-top: 30%; /* negative value of footer height */
+ clear:both;
+}
+
+/* footer end*/
+
+}
+
+/* contact form start*/
+
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea,
+#contact-form button[type="submit"] {
+	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	text-shadow:0 1px 0 #FFF;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#F9F9F9;
+	padding:25px;
+}
+#contact-form h3 {
+	color:#1074f2;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:#1074f2;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#1074f2;
+	background-image:linear-gradient(bottom, #499bea 0%, #207ce5 100%);
+	background-image:-moz-linear-gradient(bottom, #499bea 0%, #207ce5 100%);
+	background-image:-webkit-linear-gradient(bottom, #499bea 0%, #207ce5 100%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+ #contact-form button[type="submit"]:hover {
+	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+
+
+
+/* contact form End*/
+
+ img{
+  max-width:100%
+ 
+ }
+ 
+ /* Gallery Start*/
+
+ .gal {
+max-width: 100%;
+height: auto;
+display: block-inline;
+
+text-align: center;
+background-color: #1075f2;
+
+
+
+}
+.gal img {
+max-width: 50%;
+height: auto;
+margin: 30px 10px 10px 10px;
+
+}
+
+ 
+ /* Gallery End*/
+   
+  
+ /* About Start*/  
+   
+   p {
+    line-height: 1.8;
+	font-weight: normal;
+    font-size: 1.124em;
+	height: auto; 
+  
+  
+  }
+
+ /* About End*/ 
+ 
+  /* Table Start*/ 
+ 
+ table { 
+  width: 100%; 
+  border-collapse: collapse;
+  margin: 20px auto; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #1074f2; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+  /* Table End*/  
+
+/* media queries start*/
+
+/* smaller than standard 960 */
+@media only screen and (max-width: 959px) {
+  
+  .train {
+   float:right;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+ } 
+ 
+ .joystick {
+   float:left;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+  
+ }       
+ 
+ 
+
+
+}
+
+/* tablet portraits size to standard (also point when grid becomes active) */
+@media only screen and (min-width: 767px) amd(max-width: 959px) {
+
+  
+  .train {
+   float:right;
+   padding: 40px;
+   margin: 40px;
+   max-width: 100%;
+ } 
+ 
+ .joystick {
+   float:left;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+  
+ }       
+
+ 
+
+}
+
+/* Larger than tablet */
+@media  only screen and(max-width: 767px) {
+  
+  .train {
+   float:left;
+   padding:40px;
+   margin: auto;
+   max-width: 100%
+ } 
+ 
+ .joystick {
+   float:left;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+  
+ }       
+
+
+nav.primary {
+	display: block;
+	position: static;
+	text-align: center;
+	width:150px;
+	padding: 5px 0px 5px 0px;
+	
+	
+}
+
+nav a {
+	color: #a6abc5;
+	
+	margin: 0 80px 0 auto;
+	padding: 9px;
+	width:300px;
+	border: 1px solid #a6abc5;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+nav a:hover { 
+color: #fff; background-color: rgba(255,255,255,.15); 
+
+}
+
+ .logo img {
+   text-align:center;
+   margin: 0 auto 0 85px;
+   max-width: 100%;
+   height:auto;
+
+  
+
+}
+
+/* Larger than desktop */
+@media (min-width: 480px) and (max-width: 767px) {
+  
+  .train {
+   float:right;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+ } 
+ 
+ .joystick {
+   float:left;
+   padding: 40px;
+   margin: auto;
+   max-width: 100%;
+  
+ }       
+
+
+
+
+}
+
+/* Larger than Desktop HD */
+@media (max-width: 479px) {
+
+
+
+
+
+
+
+ /*
+/* media queries end*/
